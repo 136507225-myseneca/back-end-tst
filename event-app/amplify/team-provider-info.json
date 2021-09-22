@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-eventapi-dev-100922-authRole",
+      "UnauthRoleArn": "arn:aws:iam::831519258853:role/amplify-eventapi-dev-100922-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::831519258853:role/amplify-eventapi-dev-100922-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-eventapi-dev-100922-deployment",
+      "UnauthRoleName": "amplify-eventapi-dev-100922-unauthRole",
+      "StackName": "amplify-eventapi-dev-100922",
+      "StackId": "arn:aws:cloudformation:us-east-2:831519258853:stack/amplify-eventapi-dev-100922/21a43760-1860-11ec-9831-0ac3181b4e14",
+      "AmplifyAppId": "d3dkpezuoh3tvg"
+    },
+    "categories": {
+      "auth": {
+        "eventapib6757827": {}
+      },
+      "function": {
+        "eventlambda": {
+          "deploymentBucketName": "amplify-eventapi-dev-100922-deployment",
+          "s3Key": "amplify-builds/eventlambda-486d43336b417342796f-build.zip"
+        }
+      }
+    }
+  }
+}

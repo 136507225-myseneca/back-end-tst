@@ -1,0 +1,42 @@
+{
+  "paths": [
+    {
+      "name": "/events",
+      "lambdaFunction": "eventlambda",
+      "privacy": {
+        "private": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ]
+      },
+      "policyResourceName": "/events"
+    }
+  ],
+  "resourceName": "eventapi",
+  "apiName": "eventapi",
+  "functionArns": [
+    {
+      "lambdaFunction": "eventlambda"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 0,
+    "authRoleName": "amplify-eventapi-dev-100922-authRole",
+    "unAuthRoleName": "amplify-eventapi-dev-100922-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "eventlambda",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
