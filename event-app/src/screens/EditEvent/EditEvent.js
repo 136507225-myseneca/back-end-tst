@@ -83,7 +83,7 @@ const EditEvent = (props) => {
           <div className='form-control2'>
             <label>Event Location</label>
             <GooglePlacesAutocomplete
-              apiKey='AIzaSyCR1pPhgjIPbVR5lNdXZ7x4lvUIQvXoIto'
+              apiKey={process.env.REACT_APP_GOOGLE_API_KEY}
               selectProps={{
                 editEventLocation,
                 onChange: setEditEventLocation,
